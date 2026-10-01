@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tauron Nest</title>
+<meta name="description" content="Nest is a Windows desktop app by Tauron for organizing large personal image and video libraries with tags. Your library stays on your own computer.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%237c6af5'/%3E%3Cpath d='M6 18V10.5L12 6l6 4.5V18' stroke='white' stroke-width='1.8' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+	<div class="mark">
+		<a href="./">
+			<span class="mark-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V9.5L12 4l8 5.5V20" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 20v-6.5h6V20" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+			<span class="mark-word">Nest</span>
+		</a>
+		<div class="lang-toggle">
+			<button type="button" data-lang-btn="en" class="active">EN</button>
+			<button type="button" data-lang-btn="ru">RU</button>
+		</div>
+	</div>
+
+	<p class="eyebrow"><span lang="en">Tauron Nest — desktop app for Windows</span><span lang="ru">Tauron Nest — программа для Windows</span></p>
+	<h1>
+		<span lang="en">Your image and video library, tagged and kept on your own computer.</span>
+		<span lang="ru">Твоя библиотека картинок и видео — с тегами и на твоём компьютере.</span>
+	</h1>
+	<p class="lede">
+		<span lang="en">Nest is a desktop application for artists, designers and collectors who keep thousands of reference images, photos and clips. It scans the folders you choose, lets you tag and filter everything in seconds, and never uploads your files anywhere.</span>
+		<span lang="ru">Nest — программа для художников, дизайнеров и коллекционеров, у которых тысячи референсов, фото и роликов. Она сканирует выбранные тобой папки, позволяет за секунды ставить теги и фильтровать, и никуда не загружает твои файлы.</span>
+	</p>
+
+	<div class="grid">
+		<div class="panel">
+			<h2><span lang="en">Tags and filters</span><span lang="ru">Теги и фильтры</span></h2>
+			<p><span lang="en">Nested tags, tag folders, include / require / exclude filtering, ratings, notes and attached documents for every image.</span><span lang="ru">Вложенные теги, папки тегов, фильтры «любой / обязательно / исключить», оценки, описания и документы к каждой картинке.</span></p>
+		</div>
+		<div class="panel">
+			<h2><span lang="en">Fast browsing</span><span lang="ru">Быстрый просмотр</span></h2>
+			<p><span lang="en">Masonry grid and pixel-perfect 1:1 view, video playback, search by color, duplicate finder.</span><span lang="ru">Лента masonry и просмотр 1:1 пиксель в пиксель, видео, поиск по цвету, поиск повторов.</span></p>
+		</div>
+		<div class="panel">
+			<h2><span lang="en">Many formats</span><span lang="ru">Много форматов</span></h2>
+			<p><span lang="en">JPG, PNG, WebP, GIF, AVIF, SVG, PSD, HEIC, camera RAW and common video formats — with built-in conversion, cropping and PDF assembly.</span><span lang="ru">JPG, PNG, WebP, GIF, AVIF, SVG, PSD, HEIC, RAW с камер и популярные видеоформаты — со встроенной конвертацией, обрезкой и сборкой PDF.</span></p>
+		</div>
+		<div class="panel">
+			<h2><span lang="en">Fully local</span><span lang="ru">Полностью локально</span></h2>
+			<p><span lang="en">No account, no cloud, no telemetry. Your library and its database live on your own drive.</span><span lang="ru">Без аккаунта, облака и слежки. Библиотека и её база лежат на твоём диске.</span></p>
+		</div>
+	</div>
+
+	<div class="panel">
+		<h2><span lang="en">Pinterest integration</span><span lang="ru">Подключение Pinterest</span></h2>
+		<p>
+			<span lang="en">Many Nest users collect references on Pinterest. The optional Pinterest connection lets a user sign in with their own Pinterest account (official OAuth sign-in on pinterest.com), see a list of their own boards inside Nest, and save the images from a board they pick into a local folder, where they can be tagged together with the rest of the library.</span>
+			<span lang="ru">Многие собирают референсы в Pinterest. Необязательное подключение Pinterest позволяет войти своим аккаунтом Pinterest (официальный вход OAuth на pinterest.com), увидеть в Nest список своих досок и сохранить картинки выбранной доски в папку на компьютере, чтобы тегировать их вместе с остальной библиотекой.</span>
+		</p>
+		<p>
+			<span lang="en">Nest requests read-only scopes only: <code>boards:read</code>, <code>pins:read</code>, <code>user_accounts:read</code>. It reads only the boards of the signed-in account, never creates, edits or deletes anything on Pinterest, and keeps the access token on the user's own computer. Details are in the <a href="privacy.html">privacy policy</a>.</span>
+			<span lang="ru">Nest запрашивает только права на чтение: <code>boards:read</code>, <code>pins:read</code>, <code>user_accounts:read</code>. Читает только доски вошедшего аккаунта, ничего не создаёт, не меняет и не удаляет в Pinterest, а ключ доступа хранит на компьютере пользователя. Подробнее — в <a href="privacy.html">политике конфиденциальности</a>.</span>
+		</p>
+	</div>
+
+	<div class="status-row">
+		<span class="status-dot"></span>
+		<span>
+			<span lang="en"><strong>In development.</strong> Nest is an independent project by Tauron, preparing for release on Steam.</span>
+			<span lang="ru"><strong>В разработке.</strong> Nest — независимый проект Tauron, готовится к выходу в Steam.</span>
+		</span>
+	</div>
+
+	<footer>
+		<span class="foot-mono">Tauron © 2026</span>
+		<nav>
+			<a href="privacy.html"><span lang="en">Privacy Policy</span><span lang="ru">Политика конфиденциальности</span></a>
+			<a href="mailto:alekcey0404123@gmail.com"><span lang="en">Contact</span><span lang="ru">Связаться</span></a>
+		</nav>
+	</footer>
+</div>
+<script src="lang.js"></script>
+</body>
+</html>
